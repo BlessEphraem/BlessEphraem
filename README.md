@@ -22,7 +22,7 @@ Now, my philosophy is simple:
 * [![Premiere Companion](https://img.shields.io/badge/🖥️_PREMIERE_COMPANION-4B0082?style=for-the-badge)](https://github.com/BlessEphraem/Premiere-Companion) : An Excalibur software + plugin alternative, and can apply Presets too. Free and Open Source.
 * [![Premiere Companion Listener](https://img.shields.io/badge/🔌_PREMIERE_COMPANION_(LISTENER)-C80A0A?style=for-the-badge)](https://github.com/BlessEphraem/Premiere-Companion-UXP) : Premiere Pro UXP plugin bridge for Premiere Companion. *(Requires the standalone desktop app to function).*
 * [![JSX Runner](https://img.shields.io/badge/🔌_JSX_RUNNER-C80A0A?style=for-the-badge)](https://github.com/BlessEphraem/JSX-Runner) : Premiere Pro UXP plugin to run `.jsx` scripts.
-* [![JSX Scripts](https://img.shields.io/badge/📜_JSX_Scripts-C80A0A?style=for-the-badge)](https://github.com/BlessEphraem/JSX-Runner) : `.jsx` scripts free to use with my JSX Runner.
+* [![JSX Scripts](https://img.shields.io/badge/📜_JSX_Scripts-C80A0A?style=for-the-badge)](https://github.com/BlessEphraem/UXP) : `.jsx` scripts free to use with my JSX Runner.
 
 ### 🛠️ 𝐄𝐋𝐒𝐄
 * [![Python](https://img.shields.io/badge/🐍_PYTHON-FFD448?style=for-the-badge)]() : Personal toolset for daily tasks. Template folder generator, mass archive extractor, video metadata retriever...
