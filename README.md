@@ -19,10 +19,10 @@ Now, my philosophy is simple:
 > **TOOLS BUILT TO FIX CREATIVE WORKFLOWS.**
 
 ### 💻 𝐀𝐏𝐏𝐒 & 𝐏𝐋𝐔𝐆𝐈𝐍𝐒
-* [![Premiere Companion](https://img.shields.io/badge/🖥️_𝐏𝐑𝐄𝐌𝐈𝐄𝐑𝐄_𝐂𝐎𝐌𝐏𝐀𝐍𝐈𝐎𝐍-4B0082?style=for-the-badge)](https://github.com/BlessEphraem/Premiere-Companion) : An Excalibur software + plugin alternative, and can apply Presets too. Free and Open Source.
-* [![Premiere Companion Listener](https://img.shields.io/badge/🔌_𝐏𝐑𝐄𝐌𝐈𝐄𝐑𝐄_𝐂𝐎𝐌𝐏𝐀𝐍𝐈𝐎𝐍_(𝐋𝐈𝐒𝐓𝐄𝐍𝐄𝐑)-C80A0A?style=for-the-badge)](https://github.com/BlessEphraem/Premiere-Companion-UXP) : Premiere Pro UXP plugin bridge for Premiere Companion. *(Requires the standalone desktop app to function).*
-* [![JSX Runner](https://img.shields.io/badge/🔌_𝐉𝐒𝐗_𝐑𝐔𝐍𝐍𝐄𝐑-C80A0A?style=for-the-badge)](https://github.com/BlessEphraem/JSX-Runner) : Premiere Pro UXP plugin to run `.jsx` scripts.
+* [![Premiere Companion](https://img.shields.io/badge/🖥️_PREMIERE_COMPANION-4B0082?style=for-the-badge)](https://github.com/BlessEphraem/Premiere-Companion) : An Excalibur software + plugin alternative, and can apply Presets too. Free and Open Source.
+* [![Premiere Companion Listener](https://img.shields.io/badge/🔌_PREMIERE_COMPANION_(LISTENER)-C80A0A?style=for-the-badge)](https://github.com/BlessEphraem/Premiere-Companion-UXP) : Premiere Pro UXP plugin bridge for Premiere Companion. *(Requires the standalone desktop app to function).*
+* [![JSX Runner](https://img.shields.io/badge/🔌_JSX_RUNNER-C80A0A?style=for-the-badge)](https://github.com/BlessEphraem/JSX-Runner) : Premiere Pro UXP plugin to run `.jsx` scripts.
 
 ### 🛠️ 𝐄𝐋𝐒𝐄
-* [![Python](https://img.shields.io/badge/🐍_𝐏𝐘𝐓𝐇𝐎𝐍-FFD448?style=for-the-badge)]() : Personal toolset for daily tasks. Template folder generator, mass archive extractor, video metadata retriever...
-* [![AHK](https://img.shields.io/badge/⌨️_𝐀𝐇𝐊-334455?style=for-the-badge)]() : AutoHotKey scripts that I use every day.
+* [![Python](https://img.shields.io/badge/🐍_PYTHON-FFD448?style=for-the-badge)]() : Personal toolset for daily tasks. Template folder generator, mass archive extractor, video metadata retriever...
+* [![AHK](https://img.shields.io/badge/⌨️_AHK-334455?style=for-the-badge)]() : AutoHotKey scripts that I use every day.
