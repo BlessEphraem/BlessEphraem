@@ -46,5 +46,5 @@ Now, my philosophy is simple:
 * [![JSX Scripts](https://img.shields.io/badge/📜_JSX_Scripts-C80A0A?style=for-the-badge)](https://github.com/BlessEphraem/UXP) : `.jsx` scripts free to use with my JSX Runner.
 
 ### 🛠️ 𝐄𝐋𝐒𝐄
-* [![Python](https://img.shields.io/badge/🐍_PYTHON-FFD448?style=for-the-badge)]() : Personal toolset for daily tasks. Template folder generator, mass archive extractor, video metadata retriever...
-* [![AHK](https://img.shields.io/badge/⌨️_AHK-334455?style=for-the-badge)]() : AutoHotKey scripts that I use every day.
+* [![Python](https://img.shields.io/badge/🐍_PYTHON-FFD448?style=for-the-badge)](https://github.com/BlessEphraem/Python) : Personal toolset for daily tasks. Template folder generator, mass archive extractor, video metadata retriever...
+* [![AHK](https://img.shields.io/badge/⌨️_AHK-334455?style=for-the-badge)](https://github.com/BlessEphraem/AHK) : AutoHotKey scripts that I use every day.
