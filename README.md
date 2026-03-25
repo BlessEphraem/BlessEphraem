@@ -1,9 +1,23 @@
 <div align="center">
-
+  
 # ✦ 𝐄 𝐏 𝐇 𝐑 𝐀 𝐄 𝐌 ✦
 # ❝ *It might have bugs, but at least they're mine. Not a monthly subscription feature.* ❞
 
 </div>
+
+<table>
+<tr>
+<td valign="top" width="50%">
+
+## ✦ 𝐋𝐀𝐍𝐆𝐔𝐀𝐆𝐄𝐒 & 𝐒𝐓𝐀𝐓𝐒
+
+<a href="https://github.com/BlessEphraem">
+  <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=BlessEphraem&layout=compact&theme=dark&text_color=c9c0e0&bg_color=00000000&border_color=00000000&hide_border=false&langs_count=8"/>
+</a>
+
+</td>
+<td valign="top" width="50%">
+
 
 ## ✦ 𝐀𝐁𝐎𝐔𝐓 𝐌𝐄
 > **FROM ADOBE FRUSTRATION TO OPEN SOURCE SOLUTIONS.**
@@ -14,7 +28,12 @@ Now, my philosophy is simple:
 * **🚫 Anti-Data Hoarding:** I dislike the fact that big tech owns our digital lives.
 * **🔒 Local First:** Cloud is an *option*, not a requirement.
 
+</td>
+</tr>
+</table>
+
 ---
+
 # ✦ 𝐖𝐇𝐀𝐓 𝐈'𝐕𝐄 𝐃𝐎𝐍𝐄
 > **TOOLS BUILT TO FIX CREATIVE WORKFLOWS.**
 
