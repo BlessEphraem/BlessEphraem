@@ -16,8 +16,6 @@
 </a>
 
 </td>
-<td valign="top" width="50%">
-
 
 ## ✦ 𝐀𝐁𝐎𝐔𝐓 𝐌𝐄
 > **FROM ADOBE FRUSTRATION TO OPEN SOURCE SOLUTIONS.**
@@ -25,10 +23,6 @@
 > I didn't start coding just for the sake of it.
 I started because I was tired of the limitations, bugs, and bloatware found in major creative suites (looking at you, **Adobe** 😒).
 I realized that if I wanted tools that actually worked for me, I had to build them myself.
-
-</td>
-</tr>
-</table>
 
 Now, my philosophy is simple:
 * **🚫 Anti-Data Hoarding:** I dislike the fact that big tech owns our digital lives.
@@ -40,6 +34,7 @@ Now, my philosophy is simple:
 > **TOOLS BUILT TO FIX CREATIVE WORKFLOWS.**
 
 ### 💻 𝐀𝐏𝐏𝐒 & 𝐏𝐋𝐔𝐆𝐈𝐍𝐒
+* [![Input Bar](https://img.shields.io/badge/🖥️_Input_Bar-9B9B9B?style=for-the-badge)](https://github.com/BlessEphraem/InputBar) : Fast application launcher for Windows, can be triggered with any shortcuts. (Even the "Win" key). 
 * [![Premiere Companion](https://img.shields.io/badge/🖥️_PREMIERE_COMPANION-4B0082?style=for-the-badge)](https://github.com/BlessEphraem/Premiere-Companion) : An Excalibur software + plugin alternative, and can apply Presets too. Free and Open Source.
 * [![Premiere Companion Listener](https://img.shields.io/badge/🔌_PREMIERE_COMPANION_(LISTENER)-C80A0A?style=for-the-badge)](https://github.com/BlessEphraem/Premiere-Companion-UXP) : Premiere Pro UXP plugin bridge for Premiere Companion. *(Requires the standalone desktop app to function).*
 * [![JSX Runner](https://img.shields.io/badge/🔌_JSX_RUNNER-C80A0A?style=for-the-badge)](https://github.com/BlessEphraem/JSX-Runner) : Premiere Pro UXP plugin to run `.jsx` scripts.
