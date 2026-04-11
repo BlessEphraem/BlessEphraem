@@ -1,21 +1,8 @@
 <div align="center">
-  
-# ✦ 𝐄 𝐏 𝐇 𝐑 𝐀 𝐄 𝐌 ✦
-# ❝ *It might have bugs, but at least they're mine. Not a monthly subscription feature.* ❞
+
+  # ✦ 𝐄 𝐏 𝐇 𝐑 𝐀 𝐄 𝐌 ✦
 
 </div>
-
-<table>
-<tr>
-<td valign="top" width="50%">
-
-## ✦ 𝐋𝐀𝐍𝐆𝐔𝐀𝐆𝐄𝐒 & 𝐒𝐓𝐀𝐓𝐒
-
-<a href="https://github.com/BlessEphraem">
-  <img width="100%" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=BlessEphraem&layout=compact&theme=dark&text_color=c9c0e0&bg_color=00000000&border_color=00000000&hide_border=false&langs_count=8&v=1"/>
-</a>
-
-</td>
 
 ## ✦ 𝐀𝐁𝐎𝐔𝐓 𝐌𝐄
 > **FROM ADOBE FRUSTRATION TO OPEN SOURCE SOLUTIONS.**
