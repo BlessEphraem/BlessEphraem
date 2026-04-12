@@ -20,7 +20,7 @@ Now, my philosophy is simple:
 # ✦ 𝐖𝐇𝐀𝐓 𝐈'𝐕𝐄 𝐃𝐎𝐍𝐄
 > **TOOLS BUILT TO FIX CREATIVE WORKFLOWS.**
 
-### 💻 𝐀𝐏𝐏𝐒 & 𝐏𝐋𝐔𝐆𝐈𝐍𝐒
+### 💻 𝐀𝐏𝐏𝐒
 * [![Input Bar](https://img.shields.io/badge/🖥️_Input_Bar-9B9B9B?style=for-the-badge)](https://github.com/BlessEphraem/InputBar) : Fast application launcher for Windows, can be triggered with any shortcuts. (Even the "Win" key). 
 * [![Premiere Companion](https://img.shields.io/badge/🖥️_PREMIERE_COMPANION-4B0082?style=for-the-badge)](https://github.com/BlessEphraem/Premiere-Companion) : An Excalibur software + plugin alternative, and can apply Presets too. Free and Open Source.
 
