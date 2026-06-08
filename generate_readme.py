@@ -125,13 +125,9 @@ Set Height 480
 Set Framerate 24
 Set PlaybackSpeed 1
 
-Hide
-
 Type "fastfetch --set-config none --structure Title:OS:Kernel:Packages:Shell:Terminal:Font:Blank:Age --age {age}\\ years"
 Enter
-Sleep 3s
-
-Show
+Sleep 4s
 """
     with open("fastfetch.tape", "w", encoding="utf-8") as f:
         f.write(tape)
