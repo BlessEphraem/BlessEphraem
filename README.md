@@ -8,12 +8,6 @@
 | [InputBar](https://github.com/BlessEphraem/InputBar) | Fast application launcher for Windows, can be triggered with any shortcuts. (Even the "Win" key). | Python | 1 | `application-launcher` `inputbar` `keyboard-launcher` `launcher` `portable` `productivity` `program` `software` |
 | [Premiere-Companion](https://github.com/BlessEphraem/Premiere-Companion) | An Excalibur software + plugin alternatives, and can apply Presets too. Free and Open Source. | Python | 4 | `launcher` `plugin` `premiere-pro` `program` `python` `software` `uxp` `windows` |
 
-## Daemon
-
-| Repo | Description | Language | ⭐ | Topics |
-|---|---|---|---|---|
-| [WinKeyHook](https://github.com/BlessEphraem/WinKeyHook) | Lightweight Windows keyboard hook daemon. Routes global hotkeys to any client program via a named pipe, making it easy to add global hotkey support to your own applications. | C++ | 0 | `daemon` `daemon-tools` `helper` `keyhook` `windows` |
-
 ## Scripts
 
 | Repo | Description | Language | ⭐ | Topics |
@@ -22,6 +16,12 @@
 | [JSX-Runner](https://github.com/BlessEphraem/JSX-Runner) | UXP Premiere Pro plugin to run .jsx scripts. | JavaScript | 1 | `plugin` `premiere-pro` `scripts` |
 | [Python](https://github.com/BlessEphraem/Python) | Personal toolset for daily tasks. Template folder generator, mass archive extractor, video metadata retriever.. | Python | 0 | `python` `scripts` `tools` `toolset` `windows` |
 | [UXP](https://github.com/BlessEphraem/UXP) | UXP Javascript Premiere Pro Scripts. Can be used with any plugin that can execute script inside Premiere. (See mine 'JSX Runner') | JavaScript | 1 | `javascript` `premiere-pro` `scripts` `uxp` `windows` |
+
+## Daemon
+
+| Repo | Description | Language | ⭐ | Topics |
+|---|---|---|---|---|
+| [WinKeyHook](https://github.com/BlessEphraem/WinKeyHook) | Lightweight Windows keyboard hook daemon. Routes global hotkeys to any client program via a named pipe, making it easy to add global hotkey support to your own applications. | C++ | 0 | `daemon` `daemon-tools` `helper` `keyhook` `windows` |
 
 ## Else
 
