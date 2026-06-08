@@ -10,7 +10,7 @@ HEADERS = {
     "Accept": "application/vnd.github+json",
 }
 
-PRIORITY_TOPICS = ["software", "plugins", "daemon", "scripts"]
+PRIORITY_TOPICS = ["software", "plugins", "scripts", "daemon"]
 EXCLUDED_REPOS = {USERNAME, f"{USERNAME}.github.io"}
 
 
