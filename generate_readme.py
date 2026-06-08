@@ -115,6 +115,77 @@ def compute_age(today: date = None) -> int:
 
 # --- Génération du tape VHS ---
 def generate_tape(age: int, out_path: str = "fastfetch.gif"):
+    ff_config = """\
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "Ephraem.txt",
+        "color": {
+            "1": "blue",
+            "2": "blue",
+            "3": "blue",
+            "4": "blue"
+        }
+    },
+    "display": {
+        "separator": " ",
+        "color": {
+            "title": "magenta"
+        }
+    },
+    "modules": [
+        "break",
+        "break",
+        {
+            "type": "title",
+            "keyWidth": 10,
+            "color": "magenta"
+        },
+        "break",
+        {
+            "type": "os",
+            "key": " ",
+            "keyColor": "black"
+        },
+        {
+            "type": "kernel",
+            "key": " ",
+            "keyColor": "black"
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": " ",
+            "keyColor": "black"
+        },
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "black"
+        },
+        {
+            "type": "terminal",
+            "key": " ",
+            "keyColor": "black"
+        },
+        {
+            "type": "terminalfont",
+            "key": " ",
+            "keyColor": "black"
+        },
+        "break",
+        {
+            "type": "age",
+            "key": " ",
+            "keyColor": "yellow",
+            "born": "2002-04-15 09:00:00"
+        }
+    ]
+}
+"""
+    with open("fastfetch.jsonc", "w", encoding="utf-8") as f:
+        f.write(ff_config)
+
     tape = f"""\
 Output {out_path}
 
@@ -125,7 +196,7 @@ Set Height 480
 Set Framerate 24
 Set PlaybackSpeed 1
 
-Type "fastfetch --set-config none --structure Title:OS:Kernel:Packages:Shell:Terminal:Font:Blank:Age --age {age}\\ years"
+Type "fastfetch --config fastfetch.jsonc"
 Enter
 Sleep 4s
 """
