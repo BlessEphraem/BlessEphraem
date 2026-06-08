@@ -115,90 +115,52 @@ def compute_age(today: date = None) -> int:
 
 # --- Génération du tape VHS ---
 def generate_tape(age: int, out_path: str = "fastfetch.gif"):
-    ff_config = """\
-{
-    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-    "logo": {
-        "source": "Ephraem.txt",
-        "color": {
-            "1": "blue",
-            "2": "blue",
-            "3": "blue",
-            "4": "blue"
-        }
-    },
-    "display": {
-        "separator": " ",
-        "color": {
-            "title": "magenta"
-        }
-    },
-    "modules": [
-        "break",
-        "break",
-        {
-            "type": "title",
-            "keyWidth": 10,
-            "color": "magenta"
-        },
-        "break",
-        {
-            "type": "os",
-            "key": " ",
-            "keyColor": "black"
-        },
-        {
-            "type": "kernel",
-            "key": " ",
-            "keyColor": "black"
-        },
-        {
-            "type": "packages",
-            "format": "{} (pacman)",
-            "key": " ",
-            "keyColor": "black"
-        },
-        {
-            "type": "shell",
-            "key": " ",
-            "keyColor": "black"
-        },
-        {
-            "type": "terminal",
-            "key": " ",
-            "keyColor": "black"
-        },
-        {
-            "type": "terminalfont",
-            "key": " ",
-            "keyColor": "black"
-        },
-        "break",
-        {
-            "type": "age",
-            "key": " ",
-            "keyColor": "yellow",
-            "born": "2002-04-15 09:00:00"
-        }
+    logo_lines = open("Ephraem.txt", encoding="utf-8").read().splitlines()
+    LOGO_W = 38
+
+    info = [
+        "",
+        "\x1b[35mEphraem\x1b[0m@\x1b[35mEphPC\x1b[0m",
+        "",
+        "  Windows 11 Pro x86_64",
+        "  WIN32_NT 10.0.26200.8457 (25H2)",
+        "  19 (pacman)",
+        "  PowerShell 7.5.5",
+        "  Windows Terminal 1.24.11321.0",
+        "  JetBrainsMonoNL Nerd Font Mono (12pt)",
+        "",
+        f"  {age} years",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
     ]
-}
-"""
-    with open("fastfetch.jsonc", "w", encoding="utf-8") as f:
-        f.write(ff_config)
+
+    print_lines = []
+    for i, logo_line in enumerate(logo_lines):
+        padded = logo_line.ljust(LOGO_W)
+        info_part = info[i] if i < len(info) else ""
+        print_lines.append(f'echo -e "\\x1b[34m{padded}\\x1b[0m   {info_part}"')
+
+    script = "#!/bin/bash\n" + "\n".join(print_lines) + "\n"
+    with open("show_fetch.sh", "w", encoding="utf-8") as f:
+        f.write(script)
 
     tape = f"""\
 Output {out_path}
 
 Set FontFamily "JetBrainsMonoNL Nerd Font Mono"
 Set FontSize 12
-Set Width 860
-Set Height 480
+Set Width 920
+Set Height 500
 Set Framerate 24
 Set PlaybackSpeed 1
 
-Type "fastfetch --config fastfetch.jsonc"
+Type "bash show_fetch.sh"
 Enter
-Sleep 4s
+Sleep 3s
 """
     with open("fastfetch.tape", "w", encoding="utf-8") as f:
         f.write(tape)
