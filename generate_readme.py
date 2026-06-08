@@ -10,8 +10,8 @@ HEADERS = {
     "Accept": "application/vnd.github+json",
 }
 
-PRIORITY_TOPICS = ["software", "plugins", "scripts", "daemon"]
-EXCLUDED_REPOS = {USERNAME, f"{USERNAME}.github.io"}
+PRIORITY_TOPICS = ["software", "plugin", "scripts", "daemon"]
+EXCLUDED_REPOS = {USERNAME.lower(), f"{USERNAME.lower()}.github.io"}
 
 
 def get_public_repos():
@@ -28,7 +28,7 @@ def get_public_repos():
             break
         repos.extend(batch)
         page += 1
-    return repos
+    return [r for r in repos if not r["fork"]]  # <-- filtre forks
 
 
 def get_topics(repo_name):
