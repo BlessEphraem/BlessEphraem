@@ -119,13 +119,13 @@ def generate_tape(age: int, out_path: str = "fastfetch.gif"):
     LOGO_W = 38
 
     # Icônes Nerd Font (codepoints Unicode)
-    ico_os = "\ue712"  #
-    ico_kern = "\uf17c"  #
-    ico_pkg = "\ueb29"  #
-    ico_sh = "\ue795"  #
-    ico_term = "\uf489"  #
-    ico_font = "\uf031"  #
-    ico_age = "\uf017"  #
+    ico_os   = "\ue712"   #
+    ico_kern = "\uf17c"   #
+    ico_pkg  = "\ueb29"   #
+    ico_sh   = "\ue795"   #
+    ico_term = "\uf489"   #
+    ico_font = "\uf031"   #
+    ico_age  = "\uf017"   #
 
     info = [
         "",
@@ -163,7 +163,7 @@ Output {out_path}
 Set FontFamily "JetBrainsMonoNL Nerd Font Mono"
 Set FontSize 12
 Set Width 920
-Set Height 380
+Set Height 400
 Set Framerate 24
 Set PlaybackSpeed 1
 
