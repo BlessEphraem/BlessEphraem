@@ -13,8 +13,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install ffmpeg
-        uses: FedericoCarboni/setup-ffmpeg@v3
+      - name: Install VHS + dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg ttyd
+          sudo mkdir -p /etc/apt/keyrings
+          curl -fsSL https://repo.charm.sh/apt/gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/charm.gpg
+          echo "deb [signed-by=/etc/apt/keyrings/charm.gpg] https://repo.charm.sh/apt/ * *" | sudo tee /etc/apt/sources.list.d/charm.list
+          sudo apt-get update
+          sudo apt-get install -y vhs
+
+      - name: Install JetBrainsMono Nerd Font
+        run: |
+          mkdir -p ~/.local/share/fonts
+          curl -Lo font.zip https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
+          unzip -q font.zip -d ~/.local/share/fonts
+          fc-cache -fv
 
       - name: Install fastfetch
         run: |
@@ -36,9 +50,7 @@ jobs:
         run: python generate_readme.py
 
       - name: Run VHS
-        uses: charmbracelet/vhs-action@v2
-        with:
-          path: fastfetch.tape
+        run: vhs fastfetch.tape
 
       - name: Move GIF to assets
         run: |
