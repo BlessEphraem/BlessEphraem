@@ -1,35 +1,58 @@
-name: Update Profile README
+name: Update README
 
 on:
   schedule:
-    - cron: "0 22 * * *" # tous les soirs à 22h UTC
-  workflow_dispatch: # déclenchement manuel possible
-
-permissions:
-  contents: write
+    - cron: "0 9 15 4 *" # 15 avril à 9h UTC (heure de naissance)
+  workflow_dispatch: # déclenchement manuel
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install JetBrainsMono Nerd Font
+        run: |
+          mkdir -p ~/.local/share/fonts
+          curl -Lo font.zip https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
+          unzip -q font.zip -d ~/.local/share/fonts
+          fc-cache -fv
+
+      - name: Install fastfetch
+        run: |
+          curl -Lo fastfetch.deb https://github.com/fastfetch-cli/fastfetch/releases/latest/download/fastfetch-linux-amd64.deb
+          sudo dpkg -i fastfetch.deb
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - run: pip install requests
+      - name: Install Python deps
+        run: pip install requests
 
-      - name: Generate README
+      - name: Generate tape + README
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_USERNAME: BlessEphraem
+          GITHUB_USERNAME: ${{ github.repository_owner }}
         run: python generate_readme.py
 
-      - name: Commit if changed
+      - name: Run VHS
+        uses: charmbracelet/vhs-action@v2
+        with:
+          path: fastfetch.tape
+
+      - name: Move GIF to assets
+        run: |
+          mkdir -p assets
+          mv fastfetch.gif assets/fastfetch.gif
+
+      - name: Commit & push
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md
-          git diff --cached --quiet || git commit -m "chore: update README [skip ci]"
+          git add README.md assets/fastfetch.gif
+          git diff --cached --quiet || git commit -m "chore: update README & fastfetch GIF"
           git push

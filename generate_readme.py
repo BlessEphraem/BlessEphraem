@@ -1,4 +1,5 @@
 import os
+from datetime import date, datetime, timezone
 
 import requests
 
@@ -100,11 +101,58 @@ for key in categorized:
 elsewhere.sort(key=lambda r: r["name"].lower())
 
 
+# --- Calcul de l'âge ---
+BIRTHDATE = date(2002, 4, 15)
+
+
+def compute_age(today: date = None) -> int:
+    today = today or date.today()
+    age = today.year - BIRTHDATE.year
+    if (today.month, today.day) < (BIRTHDATE.month, BIRTHDATE.day):
+        age -= 1
+    return age
+
+
+# --- Génération du tape VHS ---
+def generate_tape(age: int, out_path: str = "fastfetch.gif"):
+    tape = f"""\
+Output {out_path}
+
+Set FontFamily "JetBrainsMonoNL Nerd Font Mono"
+Set FontSize 12
+Set Width 860
+Set Height 480
+Set Framerate 24
+Set PlaybackSpeed 1
+
+Hide
+
+Type "fastfetch --set-config none --structure Title:OS:Kernel:Packages:Shell:Terminal:Font:Blank:Age --age {age}\\ years"
+Enter
+Sleep 3s
+
+Show
+"""
+    with open("fastfetch.tape", "w", encoding="utf-8") as f:
+        f.write(tape)
+
+
+age = compute_age()
+generate_tape(age)
+
 # --- Construction du README ---
 with open("INTRO.md", "r", encoding="utf-8") as f:
     intro = f.read().rstrip("\n")
 
 lines = intro.splitlines()
+lines = [
+    '<div align="center">',
+    "",
+    "![fastfetch](assets/fastfetch.gif)",
+    "",
+    "</div>",
+    "",
+] + lines
 lines.append("")  # ligne vide de séparation avant les sections
 
 for topic in PRIORITY_TOPICS:
