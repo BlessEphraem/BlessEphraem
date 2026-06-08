@@ -122,14 +122,14 @@ def generate_tape(age: int, out_path: str = "fastfetch.gif"):
         "",
         "\x1b[35mEphraem\x1b[0m@\x1b[35mEphPC\x1b[0m",
         "",
-        "  Windows 11 Pro x86_64",
-        "  WIN32_NT 10.0.26200.8457 (25H2)",
-        "  19 (pacman)",
-        "  PowerShell 7.5.5",
-        "  Windows Terminal 1.24.11321.0",
-        "  JetBrainsMonoNL Nerd Font Mono (12pt)",
+        "\x1b[90m \x1b[0m Windows 11 Pro x86_64",
+        "\x1b[90m \x1b[0m WIN32_NT 10.0.26200.8457 (25H2)",
+        "\x1b[90m \x1b[0m 19 (pacman)",
+        "\x1b[90m \x1b[0m PowerShell 7.5.5",
+        "\x1b[90m \x1b[0m Windows Terminal 1.24.11321.0",
+        "\x1b[90m \x1b[0m JetBrainsMonoNL Nerd Font Mono (12pt)",
         "",
-        f"  {age} years",
+        f"\x1b[33m \x1b[0m {age} years",
         "",
         "",
         "",
@@ -144,7 +144,7 @@ def generate_tape(age: int, out_path: str = "fastfetch.gif"):
         info_part = info[i] if i < len(info) else ""
         print_lines.append(f'echo -e "\\x1b[34m{padded}\\x1b[0m   {info_part}"')
 
-    script = "#!/bin/bash\n" + "\n".join(print_lines) + "\n"
+    script = "#!/bin/bash\necho\n" + "\n".join(print_lines) + "\n"
     with open("show_fetch.sh", "w", encoding="utf-8") as f:
         f.write(script)
 
@@ -160,7 +160,7 @@ Set PlaybackSpeed 1
 
 Type "bash show_fetch.sh"
 Enter
-Sleep 3s
+Sleep 10s
 """
     with open("fastfetch.tape", "w", encoding="utf-8") as f:
         f.write(tape)
