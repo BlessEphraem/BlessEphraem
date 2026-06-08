@@ -17,9 +17,11 @@
 * [![InputBar](https://img.shields.io/badge/💻_InputBar-278BF5?style=for-the-badge)](https://github.com/BlessEphraem/InputBar) : Fast application launcher for Windows, can be triggered with any shortcuts. (Even the "Win" key).
 * [![Premiere-Companion](https://img.shields.io/badge/💻_Premiere_Companion-278BF5?style=for-the-badge)](https://github.com/BlessEphraem/Premiere-Companion) : An Excalibur software + plugin alternatives, and can apply Presets too. Free and Open Source.
 
+### 🔌 𝐏𝐋𝐔𝐆𝐈𝐍𝐒
+* [![JSX-Runner](https://img.shields.io/badge/🔌_JSX_Runner-C80A0A?style=for-the-badge)](https://github.com/BlessEphraem/JSX-Runner) : UXP Premiere Pro plugin to run .jsx scripts.
+
 ### 📜 𝐒𝐂𝐑𝐈𝐏𝐓𝐒
 * [![AHK](https://img.shields.io/badge/📜_AHK-2EA043?style=for-the-badge)](https://github.com/BlessEphraem/AHK) : AutoHotKey Script that I use every-day.
-* [![JSX-Runner](https://img.shields.io/badge/📜_JSX_Runner-2EA043?style=for-the-badge)](https://github.com/BlessEphraem/JSX-Runner) : UXP Premiere Pro plugin to run .jsx scripts.
 * [![Python](https://img.shields.io/badge/📜_Python-2EA043?style=for-the-badge)](https://github.com/BlessEphraem/Python) : Personal toolset for daily tasks. Template folder generator, mass archive extractor, video metadata retriever..
 * [![UXP](https://img.shields.io/badge/📜_UXP-2EA043?style=for-the-badge)](https://github.com/BlessEphraem/UXP) : UXP Javascript Premiere Pro Scripts. Can be used with any plugin that can execute script inside Premiere. (See mine 'JSX Runner')
 
