@@ -101,23 +101,11 @@ elsewhere.sort(key=lambda r: r["name"].lower())
 
 
 # --- Construction du README ---
-lines = [
-    '<div align="center">',
-    "",
-    f"# ✦ 𝐄 𝐏 𝐇 𝐑 𝐀 𝐄 𝐌 ✦",
-    "",
-    f'<a href="https://{USERNAME}.github.io/wiki/">',
-    f'  <img src="https://capsule-render.vercel.app/api?type=soft&color=278BF5&height=120&text=%F0%9F%8C%8D%20%F0%9D%90%96%F0%9D%90%84%F0%9D%90%81%F0%9D%90%92%F0%9D%90%88%F0%9D%90%93%F0%9D%90%84%20%F0%9F%8C%8D&fontColor=ffffff&fontSize=35&desc=Documentation%20and%20Local%20Tools&descSize=18&descAlignY=78&descAlign=50" alt="Website Banner">',
-    f"</a>",
-    "",
-    "</div>",
-    "",
-    "---",
-    "",
-    "# ✦ 𝐖𝐇𝐀𝐓 𝐈'𝐕𝐄 𝐁𝐔𝐈𝐋𝐓",
-    "> **TOOLS BUILT TO FIX CREATIVE WORKFLOWS.**",
-    "",
-]
+with open("INTRO.md", "r", encoding="utf-8") as f:
+    intro = f.read().rstrip("\n")
+
+lines = intro.splitlines()
+lines.append("")  # ligne vide de séparation avant les sections
 
 for topic in PRIORITY_TOPICS:
     entries = categorized[topic]
