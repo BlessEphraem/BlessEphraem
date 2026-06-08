@@ -118,18 +118,27 @@ def generate_tape(age: int, out_path: str = "fastfetch.gif"):
     logo_lines = open("Ephraem.txt", encoding="utf-8").read().splitlines()
     LOGO_W = 38
 
+    # Icônes Nerd Font (codepoints Unicode)
+    ico_os = "\ue712"  #
+    ico_kern = "\uf17c"  #
+    ico_pkg = "\ueb29"  #
+    ico_sh = "\ue795"  #
+    ico_term = "\uf489"  #
+    ico_font = "\uf031"  #
+    ico_age = "\uf017"  #
+
     info = [
         "",
         "\x1b[35mEphraem\x1b[0m@\x1b[35mEphPC\x1b[0m",
         "",
-        "\x1b[90m \x1b[0m Windows 11 Pro x86_64",
-        "\x1b[90m \x1b[0m WIN32_NT 10.0.26200.8457 (25H2)",
-        "\x1b[90m \x1b[0m 19 (pacman)",
-        "\x1b[90m \x1b[0m PowerShell 7.5.5",
-        "\x1b[90m \x1b[0m Windows Terminal 1.24.11321.0",
-        "\x1b[90m \x1b[0m JetBrainsMonoNL Nerd Font Mono (12pt)",
+        f"\x1b[90m{ico_os} \x1b[0m Windows 11 Pro x86_64",
+        f"\x1b[90m{ico_kern} \x1b[0m WIN32_NT 10.0.26200.8457 (25H2)",
+        f"\x1b[90m{ico_pkg} \x1b[0m 19 (pacman)",
+        f"\x1b[90m{ico_sh} \x1b[0m PowerShell 7.5.5",
+        f"\x1b[90m{ico_term} \x1b[0m Windows Terminal 1.24.11321.0",
+        f"\x1b[90m{ico_font} \x1b[0m JetBrainsMonoNL Nerd Font Mono (12pt)",
         "",
-        f"\x1b[33m \x1b[0m {age} years",
+        f"\x1b[33m{ico_age} \x1b[0m {age} years",
         "",
         "",
         "",
@@ -154,7 +163,7 @@ Output {out_path}
 Set FontFamily "JetBrainsMonoNL Nerd Font Mono"
 Set FontSize 12
 Set Width 920
-Set Height 500
+Set Height 380
 Set Framerate 24
 Set PlaybackSpeed 1
 
