@@ -11,6 +11,14 @@ HEADERS = {
 }
 
 PRIORITY_TOPICS = ["software", "plugins", "scripts", "daemon"]
+
+# Aliases acceptés par topic (singulier, variantes)
+TOPIC_ALIASES = {
+    "software": {"software"},
+    "plugins": {"plugins", "plugin"},
+    "scripts": {"scripts", "script"},
+    "daemon": {"daemon", "daemons"},
+}
 EXCLUDED_REPOS = {USERNAME.lower(), f"{USERNAME.lower()}.github.io"}
 
 # Emoji + couleur shields.io par catégorie
@@ -81,7 +89,7 @@ for repo in repos:
         continue
     topics = get_topics(name)
 
-    matched = [t for t in PRIORITY_TOPICS if t in topics]
+    matched = [t for t in PRIORITY_TOPICS if topics & TOPIC_ALIASES[t]]
     if matched:
         categorized[matched[0]].append(repo)
     else:
